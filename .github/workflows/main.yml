@@ -1,0 +1,16 @@
+name: CI/CD Pipeline
+
+# Trigger the workflow on push to any branch
+on:
+  push:
+    branches:
+      - '**' # This means any branch
+
+jobs:
+  check_code:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
