@@ -9,9 +9,7 @@
     "start": "node dist/index.js"
   },
   "devDependencies": {
+    "jest": "^29.7.0",
     "typescript": "^5.6.2"
-  },
-  "dependencies": {
-    
   }
 }
