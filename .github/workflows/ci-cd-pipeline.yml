@@ -21,7 +21,7 @@ jobs:
         node-version: '16' # or the latest LTS version
 
     - name: Install dependencies
-      run: npm ci
+      run: npm install
 
     - name: Run tests
       run: npm test
