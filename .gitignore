@@ -2,9 +2,7 @@
 node_modules/
 
 # Ignore TypeScript build outputs
-*.js
-dist/*
-!dist/index.js
+!dist/.js
 !__tests__/*.test.js
 *.js.map
 *.d.ts
