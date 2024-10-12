@@ -2,9 +2,11 @@ name: CI Pipeline
 
 on:
   push:
-    branches: Maria_Melendez
+    branches:
+      - Maria_Melendez
   pull_request:
-    branches: Maria_Melendez
+    branches:
+      - Maria_Melendez
 
 jobs:
   build-test-run:
@@ -16,7 +18,7 @@ jobs:
     - name: Use Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'
+        node-version: '16' # or the latest LTS version
 
     - name: Install dependencies
       run: npm ci
@@ -35,9 +37,3 @@ jobs:
       with:
         name: dist
         path: dist
-
-    - name: Archive code coverage results
-      uses: actions/upload-artifact@v2
-      with:
-        name: code-coverage-report
-        path: coverage
