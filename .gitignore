@@ -5,6 +5,7 @@ node_modules/
 dist/
 build/
 *.js
+!__tests__/*.test.js
 *.js.map
 *.d.ts
 *.d.ts.map
