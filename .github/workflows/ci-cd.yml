@@ -33,7 +33,7 @@ jobs:
       run: npm start
 
     - name: Archive production artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3 # Update to v3
       with:
         name: dist
         path: dist
