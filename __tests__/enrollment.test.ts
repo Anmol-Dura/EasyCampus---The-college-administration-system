@@ -1,4 +1,4 @@
-const { Enrollment } = require('../src/models/Enrollment'); // Adjust path as needed
+const { Enrollment } = require('../src/models/Enrollment');
 
 describe('Enrollment', () => {
   let enrollment;
