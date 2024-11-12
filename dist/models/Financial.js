@@ -7,6 +7,22 @@ class Financial {
         this.amountDue = amountDue;
         this.scholarship = scholarship;
     }
+
+    // Getter for receiptId
+    getReceiptId() {
+        return this.receiptId;
+    }
+
+    // Getter for amountDue
+    getAmountDue() {
+        return this.amountDue;
+    }
+
+    // Getter for scholarship
+    getScholarship() {
+        return this.scholarship;
+    }
+
     calculateTuition(studentId) {
         console.log(`Calculating tuition for student ${studentId}`);
         return this.amountDue - this.scholarship;
