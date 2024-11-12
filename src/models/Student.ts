@@ -1,16 +1,21 @@
-export class Student {
+export  class Student {
     private studentId: string;
     private name: string;
     private email: string;
     private academicHistory: string[];
     private status: string;
-  
-    constructor(studentId: string, name: string, email: string) {
+    private fee : number;
+    private rent: number;
+
+
+    constructor(studentId: string, name: string, email: string, fee=1, rent=1) {
       this.studentId = studentId;
       this.name = name;
       this.email = email;
       this.academicHistory = [];
       this.status = "Good Standing";
+      this.fee=fee;
+      this.rent=rent;
     }
   
     // Getter for studentId (read-only)
@@ -18,6 +23,10 @@ export class Student {
       return this.studentId;
     }
   
+    public gettotalexpenses():number{
+      return this.rent+this.fee;
+    }
+
     // Getters and Setters for name and email
     public getName(): string {
       return this.name;

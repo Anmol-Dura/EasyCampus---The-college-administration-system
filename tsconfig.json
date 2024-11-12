@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es2016",                              // Set the JavaScript language version
-    "module": "commonjs",                            // Set the module system (e.g., commonjs or ES6)
+    "target": "ESNext",                              // Set the JavaScript language version
+    "module": "ESNext",                            // Set the module system (e.g., commonjs or ES6)
     "outDir": "./dist",                              // Output directory for compiled JS files
     "rootDir": "./src",                              // Source directory for TypeScript files
     "strict": true,                                  // Enable strict type checking
