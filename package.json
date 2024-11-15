@@ -1,5 +1,5 @@
 {
-  "name": "your-package-name",
+  "name": "@devopsguardians/easycampus-college-admin-system",
   "version": "1.0.0",
   "description": "A brief description of your package",
   "main": "dist/index.js",
