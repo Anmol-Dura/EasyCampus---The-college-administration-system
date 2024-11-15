@@ -1,7 +1,7 @@
-const { Program } = require('../src/models/Program'); // Adjust the path as necessary
+import { Program } from '../src/models/Program';
 
 describe('Program', () => {
-  let program;
+  let program : Program;
 
   beforeEach(() => {
     program = new Program('PRG101', 'Computer Science', 30);
