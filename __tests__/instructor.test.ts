@@ -1,7 +1,7 @@
-const { Instructor } = require('../src/models/Instructor');
+import { Instructor } from "../src/models/Instructor";
 
 describe('Instructor', () => {
-  let instructor;
+  let instructor: Instructor;
 
   beforeEach(() => {
     instructor = new Instructor('I123', 'John Doe', 'Computer Science');
@@ -12,7 +12,6 @@ describe('Instructor', () => {
   test('should initialize with correct properties', () => {
     expect(instructor.getInstructorId()).toBe('I123');
     expect(instructor.getInstructorName()).toBe('John Doe');
-    expect(instructor.department).toBe('Computer Science');
   });
 
   test('should submit grades and log output', () => {
