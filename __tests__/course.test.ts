@@ -6,7 +6,7 @@ describe('Course Class', () => {
 
   beforeEach(() => {
     // Initialize a new Course object before each test
-    course = new Course('CS101', 'Intro to Computer Science', 'Introduction to programming', 3, 30, 'Prof. Smith');
+    course = new Course('CS101', 'Intro to Computer Science', 'Basic introductory course to programming', 3, 30, 'Prof. Smith');
   });
 
   // Test the constructor

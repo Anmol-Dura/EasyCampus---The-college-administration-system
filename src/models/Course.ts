@@ -7,7 +7,7 @@ export class Course {
     private capacity: number;
     private instructor: string;
   
-    constructor(courseId: string,description: string, courseName: string, credits: number, capacity: number, instructor: string) {
+    constructor(courseId: string, courseName: string,description: string, credits: number, capacity: number, instructor: string) {
       this.courseId = courseId;
       this.courseName = courseName;
       this.description = description;  // Initialize description here
