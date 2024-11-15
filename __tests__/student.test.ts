@@ -1,7 +1,7 @@
-const { Student } = require('../src/models/Student'); // Adjust path as necessary
+import { Student } from '../src/models/Student'; 
 
 describe('Student', () => {
-  let student;
+  let student: Student ;
 
   beforeEach(() => {
     student = new Student('S123', 'Jane Doe', 'jane.doe@example.com');
