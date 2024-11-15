@@ -1,7 +1,7 @@
 const { Enrollment } = require('../src/models/Enrollment');
 
 describe('Enrollment', () => {
-  let enrollment;
+  let enrollment : Enrollment;
 
   beforeEach(() => {
     enrollment = new Enrollment('E123', 'S456', 'P789');
