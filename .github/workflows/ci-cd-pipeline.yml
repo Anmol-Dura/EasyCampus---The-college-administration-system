@@ -3,10 +3,10 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - Maria_JestTest
+      - main
   pull_request:
     branches:
-      - Maria_JestTest
+      - main
 
 jobs:
   build-test-run:
