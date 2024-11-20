@@ -2,7 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Course = void 0;
 class Course {
-    constructor(courseId, description, courseName, credits, capacity, instructor) {
+
+    constructor(courseId, courseName, description, credits, capacity, instructor) {
         this.courseId = courseId;
         this.courseName = courseName;
         this.description = description; // Initialize description here

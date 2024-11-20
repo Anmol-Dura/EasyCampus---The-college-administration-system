@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ESNext",                              // Set the JavaScript language version
-    "module": "ESNext",                            // Set the module system (e.g., commonjs or ES6)
-    "outDir": "./dist",                              // Output directory for compiled JS files
-    "rootDir": "./src",                              // Source directory for TypeScript files
-    "strict": true,                                  // Enable strict type checking
-    "esModuleInterop": true,                         // Enables interoperability with CommonJS modules
-    "forceConsistentCasingInFileNames": true,        // Ensure consistent file naming
-    "skipLibCheck": true                             // Skip type checking for library files
+
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
   },
-  "include": ["src/**/*.ts"],                        // Include all TypeScript files in the src folder
-  "exclude": ["node_modules"]                        // Exclude the node_modules folder from compilation
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

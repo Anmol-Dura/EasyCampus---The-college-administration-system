@@ -1,17 +1,10 @@
+
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
+  roots: ['<rootDir>/src', '<rootDir>/__tests__'],
+  testMatch: ['**/__tests__/**/*.test.ts', '**/?(*.)+(spec|test).ts'],
   transform: {
-    '^.+\\.tsx?$': 'ts-jest', // Transforms TypeScript files using ts-jest
-  },
-  extensionsToTreatAsEsm: ['.ts'],
-  globals: {
-    'ts-jest': {
-      useESM: true, // Enables ES module support in ts-jest
-    },
-  },
-  moduleNameMapper: {
-    // If you're using paths in tsconfig.json, map them here for Jest compatibility
-    '^@/(.*)$': '<rootDir>/src/$1', 
-  },
+    '^.+\\.tsx?$': 'ts-jest'
+  }
 };

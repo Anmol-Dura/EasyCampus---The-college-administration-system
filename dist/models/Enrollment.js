@@ -8,6 +8,20 @@ class Enrollment {
         this.programId = programId;
         this.status = "Enrolled";
     }
+
+    // Getter methods for testing
+    getEnrollmentId() {
+        return this._enrollmentId;
+    }
+
+    getStudentId() {
+        return this._studentId;
+    }
+
+    getProgramId() {
+        return this._programId;
+    }
+    
     confirmEnrollment() {
         console.log(`Enrollment confirmed for student ${this.studentId} in program ${this.programId}`);
     }
